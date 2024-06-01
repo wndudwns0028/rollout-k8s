@@ -27,7 +27,7 @@ autoscaling:
     minReplicas: 1
     targetCPUUtilizationPercentage: 50
     scaleTargetRef:
-      apiVersion: apps/v1
+      apiVersion: argoproj.io/v1alpha1
       kind: Rollout
       name: rollout-test-rollout-manifest
 

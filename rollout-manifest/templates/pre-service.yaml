@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ include "rollout-manifest.fullname" . }}-preview
   labels:
-    app: {{ .Values.selector.rollout }}-preview
+    app: {{ .Values.selector.rollout }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -11,5 +11,5 @@ spec:
       targetPort: {{ .Values.service.port }}
       protocol: TCP
   selector:
-    app: {{ .Values.selector.rollout }}-preview
+    app: {{ .Values.selector.rollout }}
 
