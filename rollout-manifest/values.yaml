@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: wndudwns0028/rollout-k8s
+  repository: wndudwns0028/flask-socket
   tag: latest
   pullPolicy: IfNotPresent
 
