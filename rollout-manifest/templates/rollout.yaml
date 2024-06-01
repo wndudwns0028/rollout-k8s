@@ -3,16 +3,16 @@ kind: Rollout
 metadata:
   name: {{ include "rollout-manifest.fullname" . }}
   labels:
-    app: {{ .Values.selector.deployment }}
+    app: {{ .Values.selector.rollout }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ .Values.selector.deployment }}
+      app: {{ .Values.selector.rollout }}
   template:
     metadata:
       labels:
-        app: {{ .Values.selector.deployment }}
+        app: {{ .Values.selector.rollout }}
     spec:
       containers:
       - name: flask-socket
