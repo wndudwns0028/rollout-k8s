@@ -7,7 +7,7 @@ metadata:
     {{- include "rollout-manifest.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
-    apiVersion: apps/v1
+    apiVersion: argoproj.io/v1alpha1
     kind: Rollout
     name: {{ include "rollout-manifest.fullname" . }}
   minReplicas: {{ .Values.autoscaling.horizontalPodAutoscaler.minReplicas }}
