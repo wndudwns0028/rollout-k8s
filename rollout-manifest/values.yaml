@@ -1,0 +1,36 @@
+replicaCount: 1
+
+image:
+  repository: wndudwns0028/rollout-k8s
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 14000
+
+resources:
+  limits:
+    cpu: 500m
+  requests:
+    cpu: 200m
+
+selector:
+  app: rollout-test
+  rollout: rollout-test
+
+autoscaling:
+  enabled: true
+  horizontalPodAutoscaler:
+    name: rollout-hpa
+    maxReplicas: 10
+    minReplicas: 1
+    targetCPUUtilizationPercentage: 50
+    scaleTargetRef:
+      apiVersion: apps/v1
+      kind: Rollout
+      name: rollout-test-rollout-manifest
+
+ingress:
+  enabled: false
+
