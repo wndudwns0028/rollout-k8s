@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: wndudwns0028/flask-socket
     #tag: v4.0
-  tag: v5.0
+  tag: v4.0
   pullPolicy: IfNotPresent
 
 service:

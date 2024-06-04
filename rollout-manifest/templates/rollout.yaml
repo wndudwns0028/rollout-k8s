@@ -25,6 +25,6 @@ spec:
     blueGreen:
       activeService: {{ include "rollout-manifest.fullname" . }}
       previewService: {{ include "rollout-manifest.fullname" . }}-preview
-      autoPromotionEnabled: true
+      autoPromotionEnabled: false
       scaleDownDelaySeconds: 30
 
