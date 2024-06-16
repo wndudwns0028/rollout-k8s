@@ -23,10 +23,13 @@ mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 
 kubectl argo rollouts version
 
-![스크린샷 2024-06-04 225333](https://github.com/wndudwns0028/rollout-k8s/assets/121155356/edf088ba-1a5e-4639-a6f1-871bc6abb04f)
-
 ![스크린샷 2024-05-26 002717](https://github.com/wndudwns0028/rollout-k8s/assets/121155356/35485d11-544a-48f5-bdab-d5932ab66efb)
 
+rollout list
+![스크린샷 2024-06-04 225333](https://github.com/wndudwns0028/rollout-k8s/assets/121155356/edf088ba-1a5e-4639-a6f1-871bc6abb04f)
+
+rollout cli
 ![스크린샷 2024-06-04 225406](https://github.com/wndudwns0028/rollout-k8s/assets/121155356/42f7d36e-a3d8-4947-9f4a-0fb2519f80a1)
 
+Argo CD UI
 ![스크린샷 2024-06-04 225303](https://github.com/wndudwns0028/rollout-k8s/assets/121155356/5e62cb68-8e0c-47a3-a899-11dae17902fe)
