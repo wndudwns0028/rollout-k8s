@@ -1,6 +1,6 @@
 # Argo-rollouts
 
-프로젝트에 대한 간략한 설명.
+Argo Rollouts는 Blue/Green, Canary 등의 고급 배포 기능을 지원하는 Kubernetes controller이자 CRDs 세트이며 자동 롤백 및 수동 판단 등을 가능하게 해줍니다.
 
 ## 목차
 
