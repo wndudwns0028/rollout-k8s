@@ -16,4 +16,10 @@ Argo Rollouts는 Blue/Green, Canary 등의 고급 배포 기능을 지원하는 
 
 ## 설치
 
-프로젝트를 설치하는 방법.
+kubectl create namespace argo-rollouts
+
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+
+mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
+
+kubectl argo rollouts version
