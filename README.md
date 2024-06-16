@@ -12,7 +12,7 @@ Argo Rollouts는 Blue/Green, Canary 등의 고급 배포 기능을 지원하는 
 
 ## 소개
 
-프로젝트의 목적과 기능에 대한 자세한 설명.
+Argo Rollouts의 Blue/Green 배포 기능을 통해 서비스 관리의 안정성 테스트.
 
 ## 설치
 
