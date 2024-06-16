@@ -23,4 +23,5 @@ kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/rele
 mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 
 kubectl argo rollouts version
+
 ![스크린샷 2024-05-26 002717](https://github.com/wndudwns0028/rollout-k8s/assets/121155356/35485d11-544a-48f5-bdab-d5932ab66efb)
